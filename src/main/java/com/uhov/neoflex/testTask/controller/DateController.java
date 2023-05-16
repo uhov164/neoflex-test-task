@@ -22,9 +22,9 @@ public class DateController {
 	private ResponseEntity<Integer> calculate(@RequestBody RequestDTO request) {
 
 		int numberOfVacationDays = request.getNumberOfVacationDays();
-		int averageSallary 		 = request.getAverageSallary();
+		int averageYearSallary 	 = request.getAverageYearSallary();
 
-		return ResponseEntity.ok(calculateService.calculate(averageSallary, numberOfVacationDays));
+		return ResponseEntity.ok(calculateService.calculate(averageYearSallary, numberOfVacationDays));
 	}
 }
 

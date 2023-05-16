@@ -6,7 +6,8 @@ import org.springframework.stereotype.Service;
 public class CalculateService {
 	
 	// Метод для подсчета суммы отпускных
-	public int calculate(int averageSallary, int daysOfVacation) {
+	// Считается как (среднедневной заработок * продолжительность отпуска)
+	public int calculate(int averageYearSallary, int daysOfVacation) {
 		return 0;
 	}
 }
