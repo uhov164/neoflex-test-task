@@ -16,7 +16,7 @@ public class RequestDTO {
 		this.numberOfVacationDays = numberOfVacationDays;
 	}
 
-	public int getAverageSallary() {
+	public int getAverageYearSallary() {
 		return averageYearSallary;	
 	}
 
@@ -24,7 +24,7 @@ public class RequestDTO {
 		return numberOfVacationDays;	
 	}
 
-	public void setAverageSallary(int averageYearSallary) {
+	public void setAverageYearSallary(int averageYearSallary) {
 		this.averageYearSallary = averageYearSallary;
 	}
 

@@ -7,7 +7,10 @@ public class CalculateService {
 	
 	// Метод для подсчета суммы отпускных
 	// Считается как (среднедневной заработок * продолжительность отпуска)
-	public int calculate(int averageYearSallary, int daysOfVacation) {
-		return 0;
+	public double calculateVacationPay(int averageYearSallary, int daysOfVacation) {
+
+		double averageDaySallary = ((double) averageYearSallary) / 365; 
+
+		return averageDaySallary * daysOfVacation;
 	}
 }

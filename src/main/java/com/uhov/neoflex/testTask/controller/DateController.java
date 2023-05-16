@@ -17,14 +17,13 @@ public class DateController {
 
 	static private final String CALCULATE = "/api/calculate"; 
  
-
 	@GetMapping(CALCULATE)
-	private ResponseEntity<Integer> calculate(@RequestBody RequestDTO request) {
+	private ResponseEntity<Double> calculate(@RequestBody RequestDTO request) {
 
 		int numberOfVacationDays = request.getNumberOfVacationDays();
 		int averageYearSallary 	 = request.getAverageYearSallary();
 
-		return ResponseEntity.ok(calculateService.calculate(averageYearSallary, numberOfVacationDays));
+		return ResponseEntity.ok(calculateService.calculateVacationPay(averageYearSallary, numberOfVacationDays));
 	}
 }
 
